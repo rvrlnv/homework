@@ -1,0 +1,12 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <h1>Список инспекций</h1>
+    <ul>
+        {% for inspection in inspection_list %}
+            <li><a href="{% url 'quality_control:inspection_detail' inspection.id %}">{{ inspection.name }}</a></li>
+        {% empty %}
+            <li>Нет инспекций.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <h1>Список продуктов</h1>
+    <ul>
+        {% for product in product_list %}
+            <li><a href="{% url 'quality_control:product_detail' product.id %}">{{ product.name }}</a></li>
+        {% empty %}
+            <li>Нет продуктов.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Список запросов на улучшение</h1>
+  <ul>
+    {% for feature_request in feature_requests %}
+      <li>
+        <a href="{% url 'feature_request_detail' feature_request.pk %}">{{ feature_request.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

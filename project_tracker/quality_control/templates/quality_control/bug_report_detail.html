@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Детали отчета об ошибке</h1>
+  <p><strong>Название:</strong> {{ bug_report.title }}</p>
+  <p><strong>Описание:</strong> {{ bug_report.description }}</p>
+  <p><strong>Статус:</strong> {{ bug_report.status }}</p>
+  <p><strong>Приоритет:</strong> {{ bug_report.priority }}</p>
+{% endblock %}

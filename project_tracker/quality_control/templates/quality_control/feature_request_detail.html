@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Детали запроса на улучшение</h1>
+  <p><strong>Название:</strong> {{ feature_request.title }}</p>
+  <p><strong>Описание:</strong> {{ feature_request.description }}</p>
+  <p><strong>Статус:</strong> {{ feature_request.status }}</p>
+  <p><strong>Приоритет:</strong> {{ feature_request.priority }}</p>
+{% endblock %}

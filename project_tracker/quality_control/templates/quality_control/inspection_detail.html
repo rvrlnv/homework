@@ -1,0 +1,9 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <h1>{{ inspection.name }}</h1>
+    <p>Продукт: {{ inspection.product.name }}</p>
+    <p>Дата: {{ inspection.date }}</p>
+    <p>Результат: {{ inspection.result }}</p>
+    <!-- Другие детали инспекции -->
+{% endblock %}

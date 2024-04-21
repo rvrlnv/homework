@@ -1,0 +1,8 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <h1>Приложение Quality Control</h1>
+    <p>Добро пожаловать на главную страницу приложения Quality Control!</p>
+    <a href="{% url 'quality_control:product_list' %}">Список продуктов</a>
+    <a href="{% url 'quality_control:inspection_list' %}">Список инспекций</a>
+{% endblock %}
